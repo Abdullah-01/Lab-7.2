@@ -20,7 +20,6 @@ class InputFeatures(BaseModel):
     games_injured: int
     award: int
     highest_value: float
-    player_price_category_encoded: str
 
 def preprocessing(input_features: InputFeatures):
     dict_f = {
