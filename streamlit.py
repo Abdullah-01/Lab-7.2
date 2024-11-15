@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 
-API_URL = "https://fastapi-app-alat.onrender.com/predict"  
+API_URL = "https://lab-7-2.onrender.com/predict"  
 
 st.title("Machine Learning Prediction")
 st.write("Enter the features to make a prediction.")
@@ -17,11 +17,10 @@ if st.button("Predict"):
 
     payload = {
         "assists": assists,
-        "minutes played": minutes_played,
+        "minutes_played": minutes_played,
         "games_injured": games_injured,
         "award": award,
         "highest_value": highest_value,
-
     }
     
 
